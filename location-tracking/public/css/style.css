@@ -1,0 +1,299 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow-y: auto; /* Enable vertical scrolling for the entire window */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#top-nav {
+  background-color: #333; 
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top-nav a {
+  color: white; /* White text for navigation links */
+  text-decoration: none; /* Remove underline */
+  margin: 0 15px; /* Add margin between links */
+}
+
+#top-nav a:hover {
+  color: #fff; /* Change color on hover for better visibility */
+}
+
+#top-nav #logo {
+  font-weight: bold;
+  font-size: 20px; /* Adjusted font size for better visibility */
+}
+
+#top-nav nav {
+  display: flex; /* Align navigation items in a row */
+  gap: 20px; /* Space between navigation items */
+}
+
+#top-nav nav a {
+  text-decoration: none; /* Remove underline */
+  font-family: Arial, sans-serif; /* Change font style */
+  font-weight: 500; /* Set a medium font weight for professionalism */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+#top-nav nav a:hover {
+  color: #007bff; /* Change color on hover for interactivity */
+}
+
+#main-header {
+  background: url('https://img.freepik.com/premium-photo/colorful-topographic-map-abstract-aerial-view-revealing-geological-survey-data-concept-geological-surveys-aerial-views-topographic-maps-abstract-art-colorful-designs_918839-51456.jpg?w=996') no-repeat center center; /* map image */
+  background-size: cover;  
+  background-color: #333;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 150px 0;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 10px; /* Adds space between heading and button */
+  padding: 10px 40px;
+  background-color: #45a049; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  background-color: #218838;
+}
+
+#main-header h1 {
+  font-size: 45px;
+  color: white;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 50px); /* Adjust the value based on your footer height */
+  padding-bottom: 60px; /* Add padding to the bottom to prevent overlap */
+}
+
+#tracking-panel {
+  width: 30%; /* Adjust as needed */
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 10px; /* Space between the two sections */
+  margin-top: 20px;
+}
+
+#tracking-panel h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#track-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#track-button {
+  margin-left: 10px;
+}
+
+#track-info label {
+  margin-bottom: 5px;
+}
+
+#track-info input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#track-info button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#track-info button:hover {
+  background-color: #218838;
+}
+
+#current-status {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#current-status p {
+  font-size: 16px;
+}
+
+#status {
+  font-weight: bold;
+}
+
+#map-container {
+  width: 70%;
+  height: 500px;
+  margin-top: 20px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+#content-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#combined-panel {
+  display: flex; /* Aligns Tracking Panel and Map side by side */
+  width: 100%;
+  flex-grow: 1; /* Allows the panel to grow and fill available space */
+}
+
+#who-are-we-content {
+  overflow: visible; /* Ensure the content does not have its own scrollbar */
+  margin-top: 20px; /* Add spacing if needed */
+  text-align: center;
+}
+
+.title-class {
+  background-color: #4CAF50; /* Green background */
+  color: #fff; /* White text color */
+  padding: 10px 15px; /* Padding around the title */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 24px; /* Title font size */
+  text-align: center; /* Center align the title */
+  margin-bottom: 15px; /* Space below the title */
+}
+
+.who-are-we-container {
+  display: flex; /* Flexbox layout for left and right columns */
+  justify-content: space-between; /* Space between the columns */
+}
+
+.who-are-we-left, .who-are-we-right {
+  width: 48%; /* Set width for both columns */
+  padding: 15px; /* Padding for both columns */
+}
+
+.who-are-we-left h3, .who-are-we-right h3 {
+  margin-top: 0; /* Remove top margin for subheadings */
+  text-align: left; /* Align subheadings to the right */
+}
+
+.who-are-we-left p, .who-are-we-right p {
+  text-align: left; /* Align paragraphs to the right */
+}
+
+.who-are-we-description {
+  font-size: 16px; /* Content font size */
+  color: #333; /* Darker text color */
+  line-height: 1.5; /* Line height for readability */
+  padding: 15px; /* Padding around the content */
+  background-color: #f9f9f9; /* Light background for content */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.baumans-regular {
+  font-family: "Baumans", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Contact Us section styling */
+#contact-us-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#contact-form {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+
+#contact-form input, 
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+#contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add some space between services */
+}
+
+.service-item {
+  border: 1px solid #ccc; /* Example border */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background */
+}
+
+.follow-us-background {
+  background-color: #f0f0f0; /* Adjust this color as needed */
+  padding: 20px;
+  text-align: center; /* Center the content */
+  margin-top: 20px
+}
+
+.social-media-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between logos */
+}
+
+.social-logo {
+  width: 60px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
